@@ -24,7 +24,14 @@ builder.Services.AddCors(options =>
 
 
 // Add services to the container.
-builder.Services.AddControllers();
+//configuração para não criar um loop infinito no JASON quando fizermos requisição
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(
+        Options =>
+        {
+            Options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+        }
+    );
 
 // CONEXAO COM O BANCO DE DADOS - NEW
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -32,9 +39,11 @@ builder.Services.AddDbContext<AppDbContext> (options => options.UseSqlServer(con
 
 // registrar validações do banco de dados -NEW
 builder.Services.AddTransient<IValidator<Postagem>, PostagemValidator>();
+builder.Services.AddTransient<IValidator<Tema>, TemaValidator>();
 
 //Registrar as classes de serviço (SERVICE)
 builder.Services.AddScoped<IPostagemService, PostagemService> ();
+builder.Services.AddScoped<ITemaService, TemaService> ();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

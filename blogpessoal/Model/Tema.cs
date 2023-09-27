@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace blogpessoal.Model
 {
-    public class Postagem : Auditable
+    public class Tema
     {
         [Key] // pRIMARY kEY (Id)
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // IDENTITY(1,1)
@@ -15,16 +15,10 @@ namespace blogpessoal.Model
 
         [Column(TypeName = "varchar")]
         [StringLength(1000)]
-        public string Titulo { get; set ;} = string.Empty;
+        public string Descricao { get; set; } = string.Empty;
 
-        [Column(TypeName = "varchar")]
-        [StringLength(1000)]
-        public string Texto {get; set;} = string.Empty;
-
-        //Criando o Relacionamento entre clases 
-
-        public virtual Tema? Tema {get; set;}
-
-        
+        //Criando o Relacionamento entre clases (objeto da classe postagem)
+        [InverseProperty("Tema")]
+        public virtual ICollection<Postagem>? Postagem { get; set; }
     }
 }
