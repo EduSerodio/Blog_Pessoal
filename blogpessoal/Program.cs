@@ -1,11 +1,15 @@
+using System.Text;
 using blogpessoal.Data;
 using blogpessoal.Model;
+using blogpessoal.Security;
+using blogpessoal.Security.Implements;
 using blogpessoal.Service;
 using blogpessoal.Service.Implements;
 using blogpessoal.Validator;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,11 +44,31 @@ builder.Services.AddDbContext<AppDbContext> (options => options.UseSqlServer(con
 // registrar validações do banco de dados -NEW
 builder.Services.AddTransient<IValidator<Postagem>, PostagemValidator>();
 builder.Services.AddTransient<IValidator<Tema>, TemaValidator>();
+builder.Services.AddTransient<IValidator<User>, UserValidator>();
 
 //Registrar as classes de serviço (SERVICE)
 builder.Services.AddScoped<IPostagemService, PostagemService> ();
 builder.Services.AddScoped<ITemaService, TemaService> ();
+builder.Services.AddScoped<IUserService, UserService> ();
+builder.Services.AddScoped<IAuthService, AuthService> ();
 
+builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                var key = Encoding.UTF8.GetBytes(Settings.Secret);
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
+            });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -64,7 +88,12 @@ using (var scope = app.Services.CreateAsyncScope())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+
+    app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    options.RoutePrefix = string.Empty;
+});
 }
 
 app.UseHttpsRedirection();

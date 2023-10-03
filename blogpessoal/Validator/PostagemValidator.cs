@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using blogpessoal.Model;
 using FluentValidation;
 
@@ -21,7 +17,7 @@ namespace blogpessoal.Validator
             RuleFor(p => p.Texto)
                 .NotEmpty()    //nao pode estar vaxio
                 .MinimumLength(10)  // minumo de caracteres
-                .MaximumLength(1000);  // maximo de caracteres
+                .MaximumLength(8000);  // maximo de caracteres
  
         }
         

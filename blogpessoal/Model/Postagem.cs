@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace blogpessoal.Model
 {
@@ -22,9 +18,7 @@ namespace blogpessoal.Model
         public string Texto {get; set;} = string.Empty;
 
         //Criando o Relacionamento entre clases 
-
         public virtual Tema? Tema {get; set;}
-
-        
+        public virtual User? Usuario { get; set; }
     }
 }

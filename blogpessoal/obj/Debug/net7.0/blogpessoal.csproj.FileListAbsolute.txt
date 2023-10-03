@@ -79,3 +79,5 @@
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/obj/Debug/net7.0/blogpessoal.pdb
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/obj/Debug/net7.0/blogpessoal.genruntimeconfig.cache
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/obj/Debug/net7.0/ref/blogpessoal.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/BCrypt.Net-Core.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
