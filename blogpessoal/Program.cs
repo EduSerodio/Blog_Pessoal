@@ -117,6 +117,7 @@ namespace blogpessoal
                     In = ParameterLocation.Header,
                     Description = "Digite um Token JWT válido",
                     Name = "Autorizathion",
+                    Type = SecuritySchemeType.Http,
                     BearerFormat = "JWT",
                     Scheme = "Bearer"
                 });
@@ -150,7 +151,7 @@ namespace blogpessoal
                 });
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             //Inicializa o CORS  - NEW
             app.UseCors("MyPolicy");

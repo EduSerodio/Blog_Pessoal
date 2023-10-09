@@ -44,7 +44,7 @@
             },
             "FluentValidation": {
               "target": "Package",
-              "version": "[11.6.0, )"
+              "version": "[11.7.1, )"
             },
             "MicroElements.Swashbuckle.FluentValidation": {
               "target": "Package",
@@ -56,7 +56,7 @@
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -64,17 +64,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.11, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
