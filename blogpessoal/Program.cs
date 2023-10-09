@@ -139,6 +139,7 @@ namespace blogpessoal
 
             // Configure the HTTP request pipeline.
                 app.UseSwagger();
+                app.UseSwaggerUI();
                 
             // Swagger como página inicial na NUVEM
             if(app.Environment.IsProduction())
