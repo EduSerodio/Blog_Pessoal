@@ -20,6 +20,5 @@ namespace blogpessoal.Validator
                 .MaximumLength(8000);  // maximo de caracteres
  
         }
-        
     }
 }
