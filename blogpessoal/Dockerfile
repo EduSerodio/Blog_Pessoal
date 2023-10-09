@@ -8,10 +8,10 @@ ENV ASPNETCORE_URLS=http://+:80
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY ["blogpessoal/blogpessoal.csproj", "blogpessoal/"]
-RUN dotnet restore "blogpessoal/blogpessoal.csproj"
+COPY ["blogpessoal.csproj", "."]
+RUN dotnet restore "./blogpessoal.csproj"
 COPY . .
-WORKDIR "/src/blogpessoal"
+WORKDIR "/src/."
 RUN dotnet build "blogpessoal.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
