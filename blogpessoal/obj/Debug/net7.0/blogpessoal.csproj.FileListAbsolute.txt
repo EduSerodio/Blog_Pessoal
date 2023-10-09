@@ -81,3 +81,7 @@
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/obj/Debug/net7.0/ref/blogpessoal.dll
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/BCrypt.Net-Core.dll
 /home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/MicroElements.Swashbuckle.FluentValidation.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/Scrutor.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/Swashbuckle.AspNetCore.Filters.dll
+/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/bin/Debug/net7.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

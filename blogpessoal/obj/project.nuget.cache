@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "bcm1hnMlHjhqLFbpGpWx6ZgNGI+Gj6C8D+jnsp7l+mRDiI8nnIjLumwxgsipsqNi8c3f+xrKhMoGknUTaIJGJw==",
-  "success": true,
+  "dgSpecHash": "yjTmE8HFvGozMiW9bnYpi60NfNXCSpd9vVvYfSMsoRmSEtG4GytGHW5453GSCs5S1jVgMDQttnR8E5PdMW/7AA==",
+  "success": false,
   "projectFilePath": "/home/eduardo/Área de Trabalho/csharp/ASPNET/blogpessoal/blogpessoal/blogpessoal.csproj",
   "expectedPackageFiles": [
     "/home/eduardo/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
@@ -9,6 +9,7 @@
     "/home/eduardo/.nuget/packages/bcrypt.net-core/1.6.0/bcrypt.net-core.1.6.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/fluentvalidation/11.6.0/fluentvalidation.11.6.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microelements.swashbuckle.fluentvalidation/5.7.0/microelements.swashbuckle.fluentvalidation.5.7.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.11/microsoft.aspnetcore.authentication.jwtbearer.7.0.11.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.9/microsoft.aspnetcore.jsonpatch.7.0.9.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/7.0.9/microsoft.aspnetcore.mvc.newtonsoftjson.7.0.9.nupkg.sha512",
@@ -18,10 +19,10 @@
     "/home/eduardo/.nuget/packages/microsoft.data.sqlclient/5.0.2/microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
-    "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.11/microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.design/7.0.9/microsoft.entityframeworkcore.design.7.0.9.nupkg.sha512",
-    "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.9/microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.11/microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.9/microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.9/microsoft.entityframeworkcore.tools.7.0.9.nupkg.sha512",
     "/home/eduardo/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -52,7 +53,12 @@
     "/home/eduardo/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/home/eduardo/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/eduardo/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.11/npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore.filters/7.0.11/swashbuckle.aspnetcore.filters.7.0.11.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/7.0.11/swashbuckle.aspnetcore.filters.abstractions.7.0.11.nupkg.sha512",
     "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/home/eduardo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
@@ -86,5 +92,15 @@
     "/home/eduardo/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/home/eduardo/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.11 to 7.0.9. Reference the package directly from the project to select a different version. \n blogpessoal -> Npgsql.EntityFrameworkCore.PostgreSQL 7.0.11 -> Microsoft.EntityFrameworkCore (>= 7.0.11 && < 8.0.0) \n blogpessoal -> Microsoft.EntityFrameworkCore (>= 7.0.9)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
