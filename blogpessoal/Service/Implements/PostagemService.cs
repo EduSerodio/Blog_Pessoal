@@ -21,6 +21,7 @@ namespace blogpessoal.Service.Implements
             
             return await _context.Postagens
                 .Include(p => p.Tema)
+                .Include(p => p.Usuario)
                 .ToListAsync();
             
         }
@@ -31,6 +32,7 @@ namespace blogpessoal.Service.Implements
             {
                 var Postagem = await _context.Postagens
                                     .Include(p => p.Tema)
+                                    .Include(p => p.Usuario)
                                     .FirstAsync(p => p.Id == id);
 
                 return Postagem;
@@ -45,6 +47,7 @@ namespace blogpessoal.Service.Implements
         {
             var Postagem = await _context.Postagens
                                 .Include(p => p.Tema)
+                                .Include(p => p.Usuario)
                                 .Where(p => p.Titulo.Contains(titulo))
                                 .ToListAsync();
             return Postagem;
